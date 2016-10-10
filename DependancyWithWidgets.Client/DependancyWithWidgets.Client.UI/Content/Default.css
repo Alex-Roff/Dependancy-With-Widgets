@@ -1,0 +1,14 @@
+﻿li 
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul
+{
+    padding: 0;
+}
+img
+{
+    width:100%
+}
