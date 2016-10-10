@@ -1,3 +1,5 @@
+create database DepWithWidgets;
+
 use DepWithWidgets
 go
 
