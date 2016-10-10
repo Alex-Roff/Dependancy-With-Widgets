@@ -57,7 +57,7 @@ namespace DependancyWithWidgets.Data.Domain
                      where (w.WidgetID == newWid.WidgetID)
                      select w;
 
-        db.Entry(oldWid).CurrentValues.SetValues(newWid);       
+        db.Entry(oldWid.FirstOrDefault()).CurrentValues.SetValues(newWid);       
 
         if (db.SaveChanges() > 0)
         {
@@ -87,7 +87,7 @@ namespace DependancyWithWidgets.Data.Domain
                      where (w.WidgetID == thisWid.WidgetID)
                      select w;
 
-        db.Entry(oldWid).CurrentValues.SetValues(thisWid);
+        db.Entry(oldWid.FirstOrDefault()).CurrentValues.SetValues(thisWid);
 
         if (db.SaveChanges() > 0)
         {
