@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DependancyWithWidgets.Data.Soap.DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -13,6 +14,15 @@ namespace DependancyWithWidgets.Data.Soap
   public interface IDWWService
   {
 
-   
+    [OperationContract]
+    List<StateDao> GetStates();
+    [OperationContract]
+    List<WidgetDao> GetWidgets();
+    [OperationContract]
+    bool InsertWidget(WidgetDao wid);
+    [OperationContract]
+    bool UpdateWidget(WidgetDao wid);
+    [OperationContract]
+    bool DeleteWidget(WidgetDao wid);
   }
 }
