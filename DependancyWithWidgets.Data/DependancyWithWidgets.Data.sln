@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependancyWithWidgets.Data.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependancyWithWidgets.Data.Test", "DependancyWithWidgets.Data.Test\DependancyWithWidgets.Data.Test.csproj", "{AE5DAE05-71AA-4B0C-915C-3508924834F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependancyWithWidgets.Data.Soap", "DependancyWithWidgets.Data.Soap\DependancyWithWidgets.Data.Soap.csproj", "{06326916-C481-46C4-ACB3-627A9C5A16F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependancyWithWidgets.Data.Soap", "DependancyWithWidgets.Data.Soap\DependancyWithWidgets.Data.Soap.csproj", "{0E0C0212-879D-41C5-BDC6-16AE3465C5E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{AE5DAE05-71AA-4B0C-915C-3508924834F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5DAE05-71AA-4B0C-915C-3508924834F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5DAE05-71AA-4B0C-915C-3508924834F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06326916-C481-46C4-ACB3-627A9C5A16F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06326916-C481-46C4-ACB3-627A9C5A16F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06326916-C481-46C4-ACB3-627A9C5A16F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06326916-C481-46C4-ACB3-627A9C5A16F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0C0212-879D-41C5-BDC6-16AE3465C5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0C0212-879D-41C5-BDC6-16AE3465C5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0C0212-879D-41C5-BDC6-16AE3465C5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0C0212-879D-41C5-BDC6-16AE3465C5E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
