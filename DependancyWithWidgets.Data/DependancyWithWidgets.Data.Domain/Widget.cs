@@ -16,7 +16,7 @@ namespace DependancyWithWidgets.Data.Domain
     {
         public int WidgetID { get; set; }
         public string Name { get; set; }
-        public double BasePrice { get; set; }
+        public decimal BasePrice { get; set; }
         public bool Discount { get; set; }
         public bool ActiveBit { get; set; }
     }

@@ -53,8 +53,41 @@ namespace DependancyWithWidgets.Data.Domain
           return false;
         }
 
-        var oldWid = 
-        db.Widget.Add(newWid);
+        var oldWid = from w in db.Widget
+                     where (w.WidgetID == newWid.WidgetID)
+                     select w;
+
+        db.Entry(oldWid).CurrentValues.SetValues(newWid);       
+
+        if (db.SaveChanges() > 0)
+        {
+          return true;
+        }
+
+        return false;
+      }
+      catch (Exception)
+      {
+        return false;
+      }
+    }
+
+
+    public bool DeleteWidget(Widget thisWid)
+    {
+      try
+      {
+        if (thisWid == null)
+        {
+          return false;
+        }
+
+        thisWid.ActiveBit = false;
+        var oldWid = from w in db.Widget
+                     where (w.WidgetID == thisWid.WidgetID)
+                     select w;
+
+        db.Entry(oldWid).CurrentValues.SetValues(thisWid);
 
         if (db.SaveChanges() > 0)
         {

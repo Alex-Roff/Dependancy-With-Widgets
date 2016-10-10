@@ -20,7 +20,7 @@
           </Key>
           <Property Name="WidgetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
-          <Property Name="BasePrice" Type="float" Nullable="false" />
+          <Property Name="BasePrice" Type="money" Nullable="false" />
           <Property Name="Discount" Type="bit" Nullable="false" />
           <Property Name="ActiveBit" Type="bit" Nullable="false" />
         </EntityType>
@@ -48,7 +48,7 @@
           </Key>
           <Property Name="WidgetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="BasePrice" Type="Double" Nullable="false" />
+          <Property Name="BasePrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="Discount" Type="Boolean" Nullable="false" />
           <Property Name="ActiveBit" Type="Boolean" Nullable="false" />
         </EntityType>

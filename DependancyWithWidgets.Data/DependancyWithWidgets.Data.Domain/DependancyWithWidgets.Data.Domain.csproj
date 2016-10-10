@@ -68,30 +68,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WidgetDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="WidgetDBModel.cs" />
-    <Compile Include="WidgetDBModel.Designer.cs">
-      <DependentUpon>WidgetDBModel.edmx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="WidgetDBModel1.cs">
+    <Compile Include="WidgetDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>WidgetDBModel.tt</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="WidgetDBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>WidgetDBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Compile Include="WidgetDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WidgetDBModel.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="WidgetDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WidgetDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="WidgetDBModel.edmx.diagram">
       <DependentUpon>WidgetDBModel.edmx</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WidgetDBModel.Context.tt">
@@ -102,11 +102,8 @@
     <Content Include="WidgetDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WidgetDBModel.edmx</DependentUpon>
-      <LastGenOutput>WidgetDBModel1.cs</LastGenOutput>
+      <LastGenOutput>WidgetDBModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
